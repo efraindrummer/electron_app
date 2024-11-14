@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Bienvenida</title>
+    <!-- Asegúrate de que esta ruta apunta correctamente al archivo compilado de Tailwind -->
+    <link href="../src/styles/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Encabezado -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Bienvenido a Tu Dashboard</h1>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Cerrar Sesión
+            </button>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto mt-10 p-4">
+        <!-- Tarjeta de Bienvenida -->
+        <div class="flex flex-col md:flex-row items-center justify-between bg-white rounded-lg shadow-lg p-6 space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/80" alt="User profile" class="w-20 h-20 rounded-full">
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-800">Usuario</h2>
+                    <p class="text-gray-600">¡Nos alegra verte!</p>
+                </div>
+            </div>
+            <div class="space-x-4">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center">
+                    <span class="material-icons mr-2">dashboard</span> Panel
+                </button>
+                <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded flex items-center">
+                    <span class="material-icons mr-2">settings</span> Configuración
+                </button>
+            </div>
+        </div>
+
+        <!-- Sección de Tarjetas de Información -->
+        <div class="grid gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Estadísticas</h3>
+                <p class="text-gray-600">Visualiza tus estadísticas diarias y mantente informado.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Progreso</h3>
+                <p class="text-gray-600">Monitorea tu progreso en las tareas y metas asignadas.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Notificaciones</h3>
+                <p class="text-gray-600">Mantente al día con las notificaciones y novedades.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-200 text-gray-700 py-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
